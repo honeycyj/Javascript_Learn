@@ -1,8 +1,8 @@
-@import url("https://fonts.googleapis.com/css2?family=Muli& display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter display=swap");
 
 :root {
-  --lineborderfill: #3498db;
-  --lineborderempty: #bb9f9f;
+  --lineborderfill: #3973ff;
+  --lineborderempty: #e7edf6;
 }
 
 * {
@@ -11,7 +11,7 @@
 
 body {
   background-color: #f6f7fb;
-  font-family: "Muli", sans-serif;
+  font-family: "Inter", sans-serif;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -33,9 +33,9 @@ body {
   width: 350px;
 }
 
-.progress-container ::before {
+.progress-container::before {
   content: "";
-  background-color: var(--lineborderfill);
+  background-color: var(--lineborderempty);
   position: absolute;
   top: 50%;
   left: 0;
@@ -60,7 +60,6 @@ body {
 .circle {
   background-color: white;
   color: #999;
-  border-radius: 50%;
   height: 30px;
   width: 30px;
   display: flex;
@@ -68,8 +67,47 @@ body {
   justify-content: center;
   border: 3px solid #999;
   transition: 0.4s ease;
+
+  box-sizing: border-box;
+  color: white;
+  background: #a1acca;
+  border: 3px solid #ffffff;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1);
+  border-radius: 119px;
 }
 
 .circle.active {
-  border-color: rgb(160, 160, 225);
+  box-sizing: border-box;
+  width: 30px;
+  height: 30px;
+  color: white;
+  background: #3973ff;
+  border: 3px solid #ffffff;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1);
+  border-radius: 119px;
+}
+
+.btn {
+  background-color: var(--lineborderfill);
+  color: #f6f7fb;
+  border: 0;
+  border-radius: 4px;
+  cursor: pointer;
+  font-family: inherit;
+  padding: 8px 30px;
+  margin: 5px;
+  font-size: 14px;
+}
+.btn:active {
+  transform: scale(0.98);
+}
+
+.btn:focus {
+  outline: 0;
+}
+
+.btn:disabled {
+  background-color: var(--lineborderempty);
+  cursor: not-allowed;
+  color: #002059;
 }
