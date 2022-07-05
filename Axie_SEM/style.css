@@ -177,7 +177,7 @@ p {
   transform: scale(0.9);
 }
 
-@media (max-width: 480px) {
+@media (max-width: 520px) {
   .content {
     display: flex;
     flex-direction: column;
@@ -223,7 +223,7 @@ p {
   h1 {
     width: auto;
     padding: 0 20px;
-    /* height: 80px; */
+    height: auto;
     text-align: center;
 
     /* 32/CN-Bold */
@@ -260,13 +260,16 @@ p {
   }
 
   .logo_geetest {
+    margin: 0 10px;
     background-image: url("image/geetest.png");
-    background-size: cover;
-    width: 96px;
-    height: 24px;
+    background-size: contain !important;
+    width: 110px !important;
+    background-repeat: no-repeat;
+    background-position: center;
     transition: 0.5s ease-in-out;
   }
   .logo_axie {
+    margin: 0 10px;
     background-image: url("image/logo.png");
     background-size: contain !important;
     width: 80px !important;
