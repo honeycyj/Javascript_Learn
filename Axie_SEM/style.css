@@ -1,0 +1,242 @@
+@import url("https://fonts.googleapis.com/css2?family= Inter: wght @400;700 & display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: black;
+
+  color: white;
+  font-family: "Inter", sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  overflow: hidden;
+  margin: 0;
+}
+
+body::before {
+  content: "";
+  background: url("image/落地页.png");
+  background-size: cover;
+  z-index: -1;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0.5;
+}
+
+h1 {
+  width: 375px;
+  height: 80px;
+
+  /* 32/CN-Bold */
+
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 40px;
+  /* or 125% */
+
+  display: flex;
+  align-items: center;
+  margin: 0;
+}
+
+p {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 26px;
+  margin: 0;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 60px;
+  gap: 20px;
+
+  /* position: absolute; */
+  width: 890px;
+  height: 504px;
+  /* background-color: #333; */
+
+  background-image: url("image/SEM 弹窗.png");
+  background-size: cover;
+  position: relative;
+  /* width: 890px; */
+  /* height: 504px; */
+  /* background: #311508; */
+  box-shadow: 0px 32px 64px -12px rgba(16, 24, 40, 0.2);
+  border-radius: 12px;
+  overflow: hidden;
+}
+#background-video {
+  background-color: ;
+  display: inline-block;
+  object-fit: cover;
+  /* position: relative; */
+  position: absolute;
+  top: 0px;
+  left: 150px;
+  z-index: ;
+  width: 890px;
+  height: 504px;
+  padding: 0;
+  z-index: -1;
+  transition: 0.5s ease-in-out;
+}
+
+.content .logo {
+  margin-top: 20px;
+  background-image: url("image/logo.png");
+  background-size: cover;
+  width: 152px;
+  height: 84px;
+  transition: 0.5s ease-in-out;
+}
+
+.btn {
+  cursor: pointer;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 0px 20px;
+  gap: 10px;
+
+  width: 200px;
+  height: 48px;
+
+  background: linear-gradient(180deg, #ffffff 8.07%, #f2f2f7 97.35%);
+  border: 1px solid rgba(225, 227, 232, 0.48);
+  box-shadow: 0px 3px 4px rgba(44, 71, 146, 0.32), inset 0px -2px 0px #e1e3e8;
+  border-radius: 3px;
+
+  /* Inside auto layout */
+
+  flex: none;
+  order: 4;
+  flex-grow: 0;
+  transition: 0.5s ease-in-out;
+}
+
+.btn a {
+  text-decoration: none;
+  color: #333;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.btn .icon {
+  background-image: url("image/click.png");
+  background-size: cover;
+  width: 24px;
+  height: 24px;
+}
+
+.icon-close {
+  cursor: pointer;
+  background-image: url("image/close.png");
+  position: absolute;
+  top: 28px;
+  right: 28px;
+  width: 24px;
+  height: 24px;
+  background-size: cover;
+}
+
+.btn:hover {
+  transform: scale(0.95);
+}
+
+.icon-close:hover {
+  transform: scale(0.9);
+}
+
+@media (max-width: 480px) {
+  .content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    align-items: center;
+
+    padding: 0px;
+    margin: 20px;
+    gap: 12px;
+    width: auto;
+    height: 460px;
+
+    /* background-color: #333; */
+
+    background-image: url("image/弹窗遮罩.png");
+    background-size: cover;
+    position: relative;
+  }
+
+  #background-video {
+    background-color: ;
+    display: inline-block;
+    object-fit: cover;
+    /* position: relative; */
+    position: absolute;
+    top: -80px;
+    left: -300px;
+    z-index: ;
+    width: 890px;
+    height: 504px;
+    padding: 0;
+    z-index: -1;
+    transition: 0.5s ease-in-out;
+  }
+
+  h1 {
+    width: auto;
+    padding: 0 20px;
+    height: 80px;
+    text-align: center;
+
+    /* 32/CN-Bold */
+
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 36px;
+    /* or 125% */
+
+    display: flex;
+    align-items: center;
+    margin: 0;
+  }
+
+  p {
+    width: auto;
+    padding: 0 20px;
+    text-align: center;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 13px;
+    line-height: 26px;
+    margin: 0;
+  }
+
+  .content .logo {
+    margin-top: 160px;
+    background-image: url("image/logo.png");
+    background-size: cover;
+    width: 100px;
+    height: 50px;
+    transition: 0.5s ease-in-out;
+  }
+}
