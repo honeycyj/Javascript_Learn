@@ -85,14 +85,14 @@ p {
   overflow: hidden;
 }
 #background-video {
-  background-color: ;
+  /* background-color: ; */
   display: inline-block;
   object-fit: cover;
   /* position: relative; */
   position: absolute;
   top: 0px;
   left: 150px;
-  z-index: ;
+  /* z-index: ; */
   width: 890px;
   height: 504px;
   padding: 0;
@@ -205,14 +205,14 @@ p {
   }
 
   #background-video {
-    background-color: ;
+    /* background-color: ; */
     display: inline-block;
     object-fit: cover;
     /* position: relative; */
     position: absolute;
     top: -80px;
     left: -300px;
-    z-index: ;
+    /* z-index: ; */
     width: 890px;
     height: 504px;
     padding: 0;
