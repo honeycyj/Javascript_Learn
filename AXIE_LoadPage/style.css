@@ -1,0 +1,86 @@
+@import url("https://fonts.googleapis.com/css2?family= Inter: wght @400;700 & display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  /* display: flex; */
+  overflow: hidden;
+  margin: 0;
+}
+
+img {
+  width: 100%;
+}
+
+.container {
+  background: url("image/bg.png");
+  background-size: cover;
+  background-position: center;
+  justify-content: center;
+  display: flex;
+  margin: 0 auto;
+  height: 802px;
+}
+
+.container_main {
+  margin: 0 16px;
+  display: grid;
+  grid-template-columns: repeat(11, auto);
+  gap: 24px;
+  /* background: #ffffff; */
+  max-width: 1145px;
+  justify-self: center;
+  justify-content: center;
+  box-shadow: 0px 4px 10px -1px rgba(0, 0, 0, 0.05);
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.content {
+  grid-column: 1 / span12;
+  display: grid;
+  grid-template-columns: 1.1fr 1fr;
+  margin-top: 140px;
+  margin-bottom: 40px;
+  background: #ffffff;
+  box-shadow: 0px 4px 10px -1px rgba(0, 0, 0, 0.05);
+  border-radius: 4px;
+  overflow: hidden;
+  position: relative;
+}
+
+.intor {
+  display: flex;
+  flex-direction: column;
+  margin: 50px 60px;
+}
+
+.login {
+  background-color: #f2f4f7;
+  display: flex;
+}
+
+.quotation_marks {
+  background: url(image/quick.png);
+  background-size: cover;
+  width: 38px;
+  height: 32px;
+  margin-top: 10px;
+}
+
+@media (max-width: 520px) {
+  .content {
+    display: grid;
+    grid-template-rows: 1.1fr 1fr !important;
+    margin-top: 140px;
+    margin-bottom: 40px;
+    background: #ffffff;
+    box-shadow: 0px 4px 10px -1px rgba(0, 0, 0, 0.05);
+    border-radius: 4px;
+    overflow: hidden;
+    position: relative;
+  }
+}
