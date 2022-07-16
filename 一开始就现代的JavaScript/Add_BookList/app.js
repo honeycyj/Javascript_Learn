@@ -54,7 +54,7 @@ UI.prototype.showAlert = function (message, className) {
 
     setTimeout(() => {
         document.querySelector('.alert').remove()
-    }, 3000);
+    }, 1000);
 }
 
 // Add Event Listeners
