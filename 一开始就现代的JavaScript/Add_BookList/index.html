@@ -26,6 +26,10 @@
 </head>
 
 <body>
+    <form method="GET" action="http://www.google.com.hk/search" class="form-group">
+        <!-- //name属性不能更改 否则无法提交问题跳转到检索的页面，而是直接调到Google搜索的主界面 -->
+        <input type="text" class="form-control" value="" name=q size=31 maxlength=255 placeholder="Google">
+    </form>
     <div class="container">
         <h1>Add Book</h1>
         <form id="book-form">
