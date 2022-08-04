@@ -10,7 +10,7 @@ class GitHub {
 
         const profile = await profileResponse.json();
 
-
+        // 返回对象
         return {
             name: profile
         }
